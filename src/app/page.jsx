@@ -1,7 +1,7 @@
 import TaskCard from "@/components/TaskCard";
 
 const loadTasks = async () => {
-  const res = await fetch("http://localhost:3000/api/tasks");
+  const res = await fetch("/api/tasks");
   const data = res.json();
   return data;
 };

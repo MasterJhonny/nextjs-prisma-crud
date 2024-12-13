@@ -18,7 +18,7 @@ const TaskCard = ({ task }) => {
       `Estas seguro de eliminar la tarea "${task.title}"`
     );
     if (alertValue) {
-      fetch(`http://localhost:3000/api/tasks/${task.id}`, {
+      fetch(`/api/tasks/${task.id}`, {
         method: "DELETE",
       })
         .then((res) => res.json())
